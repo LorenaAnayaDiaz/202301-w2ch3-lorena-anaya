@@ -32,8 +32,8 @@ const generateCarton = () => {
   while (carton.length < cantidadNumeros) {
     let numeroAleatorio = 1 + Math.floor(Math.random() * 90);
     let existe = false;
-    for (let i = 0; i < carton.length; i++) {
-      if (carton[i] == numeroAleatorio) {
+    for (let position of carton) {
+      if (carton[position] == numeroAleatorio) {
         existe = true;
         break;
       }
@@ -362,7 +362,7 @@ const showRanking = () => {
   alert(
     "El ranking de usuarios aparecerá por consola, de mayor a menor puntuación."
   );
-  for (let i = 0; i < ranking.length; i++) {
+  for (let i of ranking) {
     console.log(ranking[i].nombre + " con " + ranking[i].puntos + " puntos.");
   }
   console.log(
