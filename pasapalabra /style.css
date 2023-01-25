@@ -1,0 +1,128 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background: linear-gradient(to right, #a0b5eb 0%,#c9f0e4 100%);
+  text-align: center;
+}
+
+h1 {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  text-shadow: #0066ffcb 0.1em 0.1em 0.2em
+ }
+
+.instrucciones{
+  padding: 0 0 15px 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: black;
+}
+
+ .definiciones-container{
+  border: white 7px dotted;
+  visibility: hidden;
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+ }
+
+ .words-container{
+  visibility: hidden;
+  margin: 0
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0 0 15px 0;
+}
+
+ .words li{
+  display:flex;
+  color: white;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #0066FF;
+  font-size: 35px;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid 2px white;
+  -moz-box-shadow: 0px 0px 30px #ffffff;
+-webkit-box-shadow: 0px 0px 30px #ffffff;
+box-shadow: 0px 0px 30px #ffffff;
+ }
+
+
+
+.start-game{
+  visibility: visible;
+  font-size: 1.5em;
+}
+
+
+.text-input {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  border: inset;
+}
+
+.container{
+  visibility: hidden;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2rem;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  color: #0066FF;
+  font-weight: bolder;
+  text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+form{
+  visibility: hidden;
+}
+
+button {
+  padding: .6rem 1rem;
+  border: 1px solid #995309;
+  border-radius: 40px;
+  background-color: #d9750b;
+  color: #fff;
+  font-size: 1rem;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+  box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
+    0 1px 3px rgba(0,0,0,.2);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f90),to(#e76a00));
+  background-image: linear-gradient(#f90 10%,#e76a00 100%);
+  cursor: pointer;
+}
+
+button:hover, button:focus {
+  background-color: #e0811b;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+  background-image: linear-gradient(#f0a100 10%,#f70 100%);
+}
+
+button:active {
+  background-color: #cf6a00;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.2) inset;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+  background-image: linear-gradient(#f0a100 10%,#f70 100%);
+}
