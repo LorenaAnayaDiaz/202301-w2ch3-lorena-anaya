@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pasapalabra</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <header>
+    <h1 class="main-title">PASAPALABRA</h1>
+  </header>
+  <main>
+    <section class="instrucciones">
+      <p><strong>INSTRUCCIONES DE JUEGO</strong></p>
+     <p>Basado en el exitoso concurso de televisión Pasapalabra de Telecinco, las normas son muy sencillas: </p>
+       <p> 1. Se mostrarán unas definiciones por pantalla y el usuario dispondrá de 120 segundos para responder con la palabra a la que corresponden. </p>
+       <p> 2. El usuario tiene la opción de decir Pasapalabra y dejar esa definición para más adelante. </p>
+       <p> 3. El programa es sensible a la acentuación, por lo que deberá escribir las palabras sin acentos.</p>   
+      
+    </section>
+
+  <section class="container">
+    <div class="timer"></div>
+    <div class="points">PUNTUACIÓN: 0</div>   
+</section>
+
+ <button class="start-game">JUGAR</button>
+
+
+    <section class="words-container">
+      <ul class="words">
+        <li class="letter-a">A</li>
+        <li class="letter-b">B</li>
+        <li class="letter-c">C</li>
+        <li class="letter-d">D</li>
+        <li class="letter-e">E</li>
+        <li class="letter-f">F</li>
+        <li class="letter-g">G</li>
+        <li class="letter-h">H</li>
+        <li class="letter-i">I</li>
+        <li class="letter-j">J</li>
+        <li class="letter-k">K</li>
+        <li class="letter-l">L</li>
+        <li class="letter-m">M</li>
+        <li class="letter-n">N</li>
+        <li class="letter-ñ">Ñ</li>
+        <li class="letter-o">O</li>
+        <li class="letter-p">P</li>
+        <li class="letter-q">Q</li>
+        <li class="letter-r">R</li>
+        <li class="letter-s">S</li>
+        <li class="letter-t">T</li>
+        <li class="letter-u">U</li>
+        <li class="letter-v">V</li>
+        <li class="letter-w">W</li>
+        <li class="letter-x">X</li>
+        <li class="letter-y">Y</li>
+        <li class="letter-z">Z</li>
+      </ul>
+    </section>
+
+    <div class="definiciones-container"> 
+    </div>
+
+    
+
+    <form>
+      <input class="text-input" type="text" placeholder onkeypress="validar(event)" ="Escribe tu respuesta" />
+      <div>
+        
+        <button class="clear-button">Borrar</button>
+        <button class="send-button">Enviar</button>
+        <button class="pasapalabra-button">Pasapalabra</button>
+      </div>
+    </form>
+    
+  </main>
+<script src="main.js"></script>
+</body>
+</html>
