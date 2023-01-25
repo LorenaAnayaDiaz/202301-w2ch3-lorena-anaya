@@ -32,8 +32,8 @@ const generateCarton = () => {
   while (carton.length < cantidadNumeros) {
     let numeroAleatorio = 1 + Math.floor(Math.random() * 90);
     let existe = false;
-    for (let i = 0; i < carton.length; i++) {
-      if (carton[i] == numeroAleatorio) {
+    for (let position of carton) {
+      if (carton[position] == numeroAleatorio) {
         existe = true;
         break;
       }
