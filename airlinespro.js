@@ -109,7 +109,7 @@ function userFunctions() {
     y destino ${flight.to} tiene un coste de ${flight.cost} euros.`
       );
     });
-  } else if ((suitableFlights.length = 0)) {
+  } else if (suitableFlights.length === 0) {
     console.log(
       "Lo sentimos, no hay vuelos disponibles por ese precio para el día de hoy."
     );
