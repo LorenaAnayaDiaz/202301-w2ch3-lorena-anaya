@@ -50,7 +50,7 @@ function averageCost() {
   if (averageCost) {
     let sum;
     let firstCost = flights[0].cost;
-    for (i = 0; i < flights.length; i++) {
+    for (let i = 0; i < flights.length; i++) {
       sum = firstCost += flights[i].cost;
     }
     let average = sum / flights.length;
