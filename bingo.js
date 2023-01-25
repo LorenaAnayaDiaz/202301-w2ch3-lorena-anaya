@@ -362,7 +362,7 @@ const showRanking = () => {
   alert(
     "El ranking de usuarios aparecerá por consola, de mayor a menor puntuación."
   );
-  for (let i = 0; i < ranking.length; i++) {
+  for (let i of ranking) {
     console.log(ranking[i].nombre + " con " + ranking[i].puntos + " puntos.");
   }
   console.log(
